@@ -1,0 +1,182 @@
+:root {
+  --base-color: #333;
+  --white-color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.root {
+  background-color: var(--base-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.root > * {
+  padding: 30px 20px;
+}
+
+.start-btn {
+  cursor: pointer;
+  font-size: 50px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.start-btn:hover {
+  color: red;
+}
+
+.container > * {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.alphabets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alphabet {
+  background-color: var(--white-color);
+  color: var(--base-color);
+  width: 38px;
+  height: 43px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 43px;
+  font-size: 20px;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.alphabet:hover,
+.alphabet.chosen {
+  background-color: var(--base-color);
+  color: var(--white-color);
+}
+
+.answer-box {
+  height: 60px;
+}
+
+.answer-box span {
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.progress-box {
+  width: 330px;
+  height: 180px;
+  border: 2px dashed var(--white-color);
+  position: relative;
+  margin: 0 auto;
+}
+
+.progress-box li {
+  position: absolute;
+  background-color: var(--white-color);
+}
+
+.progress-box li:nth-child(1) {
+  width: 132px;
+  height: 1px;
+  bottom: 20px;
+  left: 20px;
+}
+
+.progress-box li:nth-child(2) {
+  width: 1px;
+  bottom: 20px;
+  top: 15px;
+  left: 25px;
+}
+
+.progress-box li:nth-child(3) {
+  width: 65px;
+  height: 1px;
+  top: 20px;
+  left: 20px;
+}
+
+.progress-box li:nth-child(4) {
+  width: 1px;
+  height: 10px;
+  top: 20px;
+  left: 75px;
+}
+
+.progress-box li:nth-child(5) {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  left: 67.5px;
+  top: 30px;
+}
+
+.progress-box li:nth-child(6) {
+  width: 1px;
+  height: 30px;
+  top: 48px;
+  left: 75px;
+}
+
+.progress-box li:nth-child(7) {
+  width: 30px;
+  height: 1px;
+  left: 45px;
+  top: 55px;
+  transform: rotate(-5deg);
+}
+
+.progress-box li:nth-child(8) {
+  width: 30px;
+  height: 1px;
+  left: 75px;
+  top: 55px;
+  transform: rotate(5deg);
+}
+
+.progress-box li:nth-child(9) {
+  width: 30px;
+  height: 1px;
+  left: 48px;
+  top: 85px;
+  transform: rotate(-30deg);
+}
+
+.progress-box li:nth-child(10) {
+  width: 30px;
+  height: 1px;
+  left: 74px;
+  top: 85px;
+  transform: rotate(30deg);
+}
+
+.control-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  min-width: 160px;
+  margin: 0 15px;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid var(--white-color);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--white-color);
+  color: var(--base-color);
+  cursor: pointer;
+}
